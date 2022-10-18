@@ -1,13 +1,14 @@
-import { BrowserRouter as Router,Routes,Route,Link} from "react-router-dom"
+import { BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import "./App.css"
 import Header from "./components/common/header/Header"
+import Home from "./components/home/Home"
 function App() {
   return (
     <>
       <Router>
         <Header />
         <Routes>
-            {/* <Route /> */}
+            <Route path="/"  element= {<Home />}/>
         </Routes>
       </Router>
     </>
